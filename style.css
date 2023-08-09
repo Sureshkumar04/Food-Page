@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1vmin;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vmin;
+}
+
+
+.total-header{
+    position: sticky;
+    top: 0;
+    padding-top: 1vmin;
+    background-color: white;
+    z-index: 2000;
+}
+
+.Zomato-logo{
+    width: 25vmin;
+}
+
+.Zomato-logo img{
+    width: 100%;
+    margin-left: 10vmin;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3vmin;
+}
+
+.logo-location{
+    display:flex;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+    margin-left: 20vmin;
+}
+
+.location select{
+    width: 40vmin;
+    height: 5vmin;
+    padding-left: 1vmin;
+    outline:none;
+    border: 1px solid transparent;
+}
+
+.location input{
+    width: 40vmin;
+    height: 5vmin;
+    padding-left: 1vmin;
+    outline:none;
+    border: none;
+}
+ 
+.location select:focus{
+    border: none;
+    outline: none;
+}
+
+.location span{
+    font-size: 3vmin;
+}
+
+.location span i{
+    transform: translateY(-0.5vmin);
+    font-size: 2.5vmin;
+    margin-left: 2vmin;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list nav li a:hover{
+    text-decoration: underline;
+}
+
+.nav-list nav{
+    display: flex;
+    width: 30vmin;
+    justify-content: space-around;
+    margin-right: 10vmin;
+}
+
+.header-2{
+    padding-left: 11vmin;
+    margin-top: 3vmin;
+}
+
+.header-2 p, .header-2 span{
+    font-size: 1.7vmin;
+}
+
+.delivery-logo{
+    width: 9vmin;
+    height: 9vmin;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.delivery-logo img{
+    width: 100%;
+
+}
+
+.delivery-001{
+    display: flex;
+    align-items: center;
+    width: 17vw;
+}
+
+.secondary-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;   
+}
+
+.secondary-logo li a{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.secondary-logo li a:hover{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+    color: black;
+}
+
+.line{
+    border-bottom: 1px solid rgb(185, 185, 185);
+    margin-top: 2.7vmin;
+}
+
+.header-3btn{
+    margin-top: 3.5vmin;
+}
+.header-3btn a{
+    padding: 1vmin 2vmin;
+    border: 1px solid rgb(204, 200, 200);
+    margin-right: 3vmin;
+    border-radius: 5px;
+
+}
+
+.first-order-images{
+    background-color: rgb(250, 240, 240);
+    padding:5vmin;
+}
+
+.first-order-images h1{
+    font-size: 5.5vmin;
+    font-weight: 400;
+    margin-left: 10vmin;
+    margin-bottom: 2.5vmin;
+}
+
+.food-image{
+    width: 23vmin;
+    height: 23vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+}
+
+.first-order-img1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-order-img1 h6{
+    font-size: 3vmin;
+    font-weight: 500;
+}
+
+.first-order-img001{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    column-gap: 2%;
+}
+
+/* food Contain */
+
+.food-content-title h1{
+    font-size: 5.5vmin;
+    font-weight: 400;
+    margin-top: 2vmin;
+    margin-left: 15vmin;
+    
+}
+.food-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 5vmin;
+}
+
+
+
+
+.food-contain-01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vmin 3vmin;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.food-contain-01:hover{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.432) ;
+}
+
+.food-contain-img-off{
+    position: relative;
+}
+
+.food-contain-img{
+    width: 48vmin;
+    height: 40vmin;
+    overflow: hidden;
+    border-radius: 1vmin;
+    margin-bottom: 1vmin;
+}
+
+.food-contain-img img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-position: bottom;
+    object-fit: cover;
+}
+
+.Cost p span{
+    font-weight: 600;
+}
+
+.offer-top{
+    position: absolute;
+    top: 80%;
+    background-color: blue;
+    color: white;
+    padding-right: 2vmin;
+    padding-left: 1vmin;
+    border-radius:0 6px 6px 0 ;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.274);
+}
+
+.food-contain-title{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.3vmin;
+    width: 47vmin;
+}
+
+.food-contain-title .rating{
+    justify-self: flex-end;
+    background-color: rgb(10, 180, 10);
+    width: 7vmin;
+    padding: 0.1vmin 1vmin;
+    position: relative;
+    border-radius: 1vmin;
+    color: white;
+}
+
+.food-contain-title .rating i{
+    font-size: 1.5vmin;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    margin-left: 0.7vmin;
+    color: white;
+}
+
+.food-contain-title .Cost{
+    justify-self: flex-end;
+} 
+
+.food-contain-title .buy-btn ion-icon{
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    font-size: 2.5vmin; 
+    animation-name: order;   
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+.food-contain-title .buy-btn a span{margin-right: 1vmin;}
+
+.food-contain-title .buy-btn{
+    grid-area: 3 / span 2;
+    justify-self: center;
+    background-color: blue;
+    color: white;
+    padding: 1vmin 18vmin;
+    margin-top: 1vmin;
+    position: relative;
+    transition: 0.5s;
+}
+
+.food-contain-title .buy-btn:hover{
+    background-color: green;
+
+}
+
+.food-contain-title .buy-btn a{color: white;}
+
+
+
+/* About us */
+
+.about-us{
+    background-color: rgb(250, 240, 240);
+    padding: 1vmin 0 7vmin;
+    margin: 2vmin 0 5vmin;
+}
+.para{
+    width: 87vw;
+    margin-left: 15vmin;
+    text-indent: 20vmin;
+    line-height: 3.5vmin;
+    letter-spacing: 1px;
+    margin-top: 2vmin;
+    text-align: justify;
+}
+
+/* contact-us */
+
+.social-icon{
+    margin-top: 2vmin;
+    display: flex;
+    gap: 10vmin;
+    margin-left: 17vmin;
+    margin-bottom: 5vmin;
+
+}
+
+.social-icon a i{
+    font-size: 3.2vmin;
+    color: black;  
+}
+
+.instagram, .youtube, .email, .whatsapp{display: flex; flex-direction: column; align-items: center;}
+
+.insta-logo, .youtube-logo, .email-logo, .whatsapp-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: none;
+    width: 50px;
+    height: 50px;
+}
+
+.insta-logo:hover{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+}
+.youtube-logo:hover{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+}
+.email-logo:hover{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+}
+.whatsapp-logo:hover{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+}
+
+
+/* feedback */
+
+.total-feedback{
+    margin-top: 4vmin;
+}
+.feedback{
+    margin-left: 17vmin;
+    margin-top: 3vmin;
+}
+
+.input-name{
+    margin-bottom: 3vmin;
+    display: flex;
+    justify-content: space-between;
+    width: 28vw;
+    
+}
+
+.input-name input{
+    width: 40vmin;
+    height: 5vmin;
+    padding-left: 1vmin;
+    outline:none;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.233);
+}
+
+.input-name textarea{
+    padding-left: 1vmin;
+    outline:none;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.233);
+    resize: none;
+}
+
+.feed-btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 20vw;
+}
+
+.buy-btn{
+    background-color: blue;
+    color: white;
+    padding: 1vmin 8vmin;
+    outline:none;
+    border: 1px solid transparent;
+    margin-top: 1vmin;
+    transition: 0.5s;
+}
+
+.buy-btn:hover{
+    background-color: green;
+}
+
+.total-feedback{
+    background-color: rgb(250, 240, 240);
+    padding: 1vmin 0 5vmin;
+    margin: 0vmin 0;
+}
+
+
+/* footer */
+.footer{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    padding: 15vmin 0;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width:650px) {
+
+    .location{
+        display: none;
+    }
+    .first-order-img001{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .first-order-images h1{
+        margin: 0px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .food-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 1rem 0 1rem;
+    }
+
+    .food-content-title h1{
+        font-weight: 500;
+        margin: 2rem;
+    }
+
+    .food-contain-img{
+        width: 78vmin;
+        height: 70vmin;
+    }
+
+    .food-contain-title{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 77vmin;
+    }
+    .food-contain-title h5{
+        font-size: 1.8rem;
+    }
+
+    .food-contain-title .rating{
+        font-size: 1.4rem;
+    }
+
+    .food-contain-title .subtitle p{
+        font-size: 1.5rem;
+    }
+
+    .food-contain-title .rating{
+        width: 9vmin;
+    }
+    .Cost p{
+        font-size: 1.6rem;
+    }
+
+    .Cost p span{
+        font-size: 1.8rem;
+    }
+
+    .buy-btn a span {
+        font-size: 1.8rem;
+    }
+
+    .food-contain-title .buy-btn ion-icon{
+        position: absolute;
+        top: 18%;
+        transform: translateY(-18%);
+        font-size: 5vmin; 
+    }
+    .food-contain-title .buy-btn{
+        padding: 1vmin 31vmin;
+    }
+    .offer-top p{
+        font-size: 1.7rem;
+    }
+    .para{
+        width: fit-content;
+        margin: 0;
+    }
+    .about-us{
+        background-color: rgb(250, 240, 240);
+        padding: 1vmin 7vmin 7vmin;
+        margin: 2rem;
+        
+    }
+
+
+    .about-us .food-content-title h1{
+        margin: 0;
+    }
+
+    .social-icon{
+        margin: 0 0 3rem ;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon a i{
+        font-size: 5vmin;
+    }
+
+    .input-name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-name input{
+        width: 70vmin;
+        height: 7vmin;
+        font-size: 1.3rem;
+    }
+
+    .input-name label{
+        font-size: 1.5rem;
+    }
+
+    .input-name textarea{
+        width: 70vmin;
+        height: 15vmin;
+        font-size: 1.3rem;
+    }
+
+    .feed-btn button {
+        font-size: 1.5rem;
+    }
+
+    .feedback{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 7vmin;
+    }
+
+    .feed-btn{
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes order{
+    0%, 100%{transform:translateX(-5px)}
+    50%{transform:translateX(5px)}
+}
