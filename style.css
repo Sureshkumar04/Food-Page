@@ -509,9 +509,33 @@ html{
         margin: 2rem;
     }
 
+    .nav-list nav li a{
+        font-size: 1.45rem;
+    }
+    .Zomato-logo img{
+        margin-left: 5vmin;
+    }
+
+    .nav-list nav{
+        margin-right: 5vmin;
+    }
+
+   .header-2{
+    padding: 0;
+    text-align: center;
+   }
+
+   .secondary-logo li a{
+    font-size: 1.5rem;
+   }
+
     .food-contain-img{
         width: 78vmin;
         height: 70vmin;
+    }
+
+    .food-content-title h1{
+        margin-bottom: 1rem;
     }
 
     .food-contain-title{
@@ -562,6 +586,8 @@ html{
         width: fit-content;
         margin: 0;
     }
+
+    .para p{font-size: 1.3rem;}
     .about-us{
         background-color: rgb(250, 240, 240);
         padding: 1vmin 7vmin 7vmin;
