@@ -271,7 +271,7 @@ html{
 .offer-top{
     position: absolute;
     top: 80%;
-    background-color: blue;
+    background-color: #1e90ff;
     color: white;
     padding-right: 2vmin;
     padding-left: 1vmin;
@@ -447,7 +447,7 @@ html{
 }
 
 .buy-btn{
-    background-color: blue;
+    background-color: #1e90ff;
     color: white;
     padding: 1vmin 8vmin;
     outline:none;
